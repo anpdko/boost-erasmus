@@ -1,11 +1,10 @@
 import { Routes, Route } from 'react-router-dom'
-import { Home, About, Partners, Events } from './pages'
+import { Home, About, Partners, Events, AdminAuth } from './pages'
 import { Navbar, Footer } from './components';
 
-function App() {
+const AppRoutes = () => {
   return (
-   <div>
-    <Navbar/>
+    <div>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/about' element={<About/>}/>
@@ -14,6 +13,18 @@ function App() {
     </Routes>
     <Footer/>
    </div>
+  )
+}
+
+function App() {
+  return (
+    <div>
+      <Navbar/>
+      <Routes>
+        <Route path='/*' element={<AppRoutes/>}/>
+        <Route path='/admin' element={<AdminAuth/>}/>
+      </Routes>
+    </div>
   )
 }
 
