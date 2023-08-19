@@ -2,8 +2,10 @@ import s from './Home.module.scss'
 import { HeaderMain, CardsMain, Banner, SectionTitle, Partners, Information } from '../../components';
 import backImg from '../../assets/back.png'
 import iconSmile from '../../assets/icon-rife-smile.png'
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+   const {t} = useTranslation()
    return (
       <div className={s.home}>
          <HeaderMain />
@@ -16,7 +18,7 @@ const Home = () => {
             <Partners/>
          </div>
          <SectionTitle img={backImg}>
-            LATEST POSTS
+            {t("Number-head-block")}
          </SectionTitle>
          <div className="container">
             <Information/>

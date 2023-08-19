@@ -8,7 +8,6 @@ import pnpuImg from '../assets/partners/pnpu.png'
 import uprImg from '../assets/partners/upr.png'
 import utImg from '../assets/partners/ut.png'
 
-
 const partners = [
    {
       id: 1,
@@ -16,7 +15,7 @@ const partners = [
          title: "University of Tartu (Estonia)",
       },
       ua: {
-         title: "University of Tartu (Estonia)",
+         title: "Тартуський університет (Естонія)",
       },
       link: "https://ut.ee/en",
       img: utImg
@@ -27,7 +26,7 @@ const partners = [
          title: "University of Primorska (Slovenia)",
       },
       ua: {
-         title: "University of Primorska (Slovenia)",
+         title: "Приморський університет (Словенія)",
       },
       link: "https://www.upr.si/",
       img: uprImg
@@ -38,7 +37,7 @@ const partners = [
          title: "University of Applied Sciences in Elblag (Poland)",
       },
       ua: {
-         title: "University of Applied Sciences in Elblag (Poland)",
+         title: "Державний Університет в Ельблонзі (Польща)",
       },
       link: "https://ans-elblag.pl/",
       img: ansImg
@@ -49,7 +48,7 @@ const partners = [
          title: "Poltava V. G. Korolenko National Pedagogical University (Ukraine)",
       },
       ua: {
-         title: "Poltava V. G. Korolenko National Pedagogical University (Ukraine)",
+         title: "Полтавський національний педагогічний університет імені В.Г. Короленка (Україна)",
       },
       link: "http://pnpu.edu.ua/",
       img: pnpuImg
@@ -60,7 +59,7 @@ const partners = [
          title: "Donbas National Academy of Civil Engineering and Architecture (Ukraine)",
       },
       ua: {
-         title: "Donbas National Academy of Civil Engineering and Architecture (Ukraine)",
+         title: "Донбаська національна академія будівництва і архітектури (Україна)",
       },
       link: "https://donnaba.edu.ua/",
       img: donnabaImg
@@ -71,7 +70,7 @@ const partners = [
          title: "Bogdan Khmelnitsky Melitopol State Pedagogical University (Ukraine)",
       },
       ua: {
-         title: "Bogdan Khmelnitsky Melitopol State Pedagogical University (Ukraine)",
+         title: "Мелітопольський державний педагогічний університет імені Богдана Хмельницького (Україна)",
       },
       link: "https://mdpu.org.ua/",
       img: mdpuImg
@@ -82,7 +81,7 @@ const partners = [
          title: "Izmail State University of Humanities (Ukraine)",
       },
       ua: {
-         title: "Izmail State University of Humanities (Ukraine)",
+         title: "Ізмаїльський державний гуманітарний університет (Україна)",
       },
       link: "http://idgu.edu.ua/",
       img: idguImg
@@ -93,7 +92,7 @@ const partners = [
          title: "Kremenets Taras Shevchenko Regional Academy of Humanities and Pedagogy (Ukraine)",
       },
       ua: {
-         title: "Kremenets Taras Shevchenko Regional Academy of Humanities and Pedagogy (Ukraine)",
+         title: "Кременецька обласна гуманітарно-педагогічна академія імені Тараса Шевченка (Україна)",
       },
       link: "https://kogpa.edu.ua/uk/",
       img: kogpaImg
@@ -104,7 +103,7 @@ const partners = [
          title: "Mukachevo State University (Ukraine)",
       },
       ua: {
-         title: "Mukachevo State University (Ukraine)",
+         title: "Мукачівський державний університет (Україна)",
       },
       link: "https://msu.edu.ua/",
       img: msuImg

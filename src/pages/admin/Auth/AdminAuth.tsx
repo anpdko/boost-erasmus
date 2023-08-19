@@ -15,7 +15,7 @@ interface IData {
 const AdminAuth = () => {
    const [login, setLogin] = useState('')
    const [password, setPassword] = useState('')
- 
+
    const { loading, message } = useSelector((state:any) => state.admin);
    const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
 
@@ -27,7 +27,6 @@ const AdminAuth = () => {
       const data:IData = { login, password }
       dispatch(adminLogin(data))
    }
-   
 
    return (
       <React.Fragment>

@@ -2,21 +2,23 @@
 import s from './About.module.scss'
 import { Header } from "../../components"
 import headerImg from '../../assets/header.jpg'
+import {useTranslation} from 'react-i18next'
 
 const About = () => {
+   const {t} = useTranslation()
+
+
    return (
       <div className={s.about}>
          <Header img={headerImg}>
-            <h1>ABOUT MULTIED</h1>
+            <h1>{t("about-boost-h1")}</h1>
          </Header>
 
          <div className='container'>
-            <p>Ukrainian universities located in remote towns, who are not able to compete with top educational establishments, face multiple challenges ranging from low technical capacity to falling behind the latest approaches in learning and to underdeveloped soft skills of both staff and students. This project undertakes an ambitious aim to support remote universities that have never enjoyed international project experience. The project will enrich the participating universities with simple tools to increase their performance in different areas ranging from capacity to internationalization.</p>
-            <p>BOOST supports five Ukrainian first-comers in their aspiration to join the European educational space and establish contacts with EU peers. The project expects a smooth exchange of ideas as the partners are of the same level and size.</p>
-            <p>The EU partners will share their experience during the project's lifetime and help UA partners develop technical, digital, learning, community, and international capacity. The project's progressive pace in different directions allows achieving high results within a short period. Representatives from UA partners with limited English skills will be offered learning opportunities in Ukrainian. Thus, BOOST will embrace underprivileged monolingual participants.</p>
-            <p>The project encompasses 3 study trips to the EU universities for 54 people. Nine training courses for 411 participants will enhance UA partners' administrative and teaching skills. The project will promote student-centred blended learning, and it will facilitate the launch of 1 new compulsory course for 1240 students and an update of 62 courses for 1150 students. Consequently, these courses will improve students' skills and employability. </p>
-            <p>BOOST's outputs include reports on university IT and tech development, update of internationalization strategy considering the first international experience, and the design of a Roadmap of support for remote universities.</p>
-            <p>Our dissemination will outreach 370 people with webinars for university administration “University Digitalization Plan,” online conference “Digital Tools for Interactive Learning,” an international week “University International Cooperation and Grant Activity," and a new professional development course “Student-Centred Approaches for Blended Learning” for in-service teachers. The Ministry of Education as project partners will ensure the spread of the project results at the national level.</p>
+            <div className={s.content}>
+               <div dangerouslySetInnerHTML={{ __html: t("About-text-HTML") }} />
+            </div>
+            
          </div>
 
 

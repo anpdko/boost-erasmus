@@ -8,6 +8,7 @@ import Partners from "./Partners/Partners";
 import PartnersCards from "./PartnersCards/PartnersCards";
 import Information from "./Information/Information";
 import Translation from "./Translation/Translation";
+import Pagination from './Pagination/Pagination'
 
 import Footer from "./Footer/Footer";
 
@@ -22,6 +23,7 @@ export {
    PartnersCards,
    Information,
    Translation,
+   Pagination,
 
    Footer
 }

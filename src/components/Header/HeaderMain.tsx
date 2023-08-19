@@ -15,8 +15,8 @@ const HeaderMain = () => {
          <div className={s.effect_img}></div>
          <div className={s.box_content}>
             <h1>{t("Main-page-title")}</h1>
-            <p>Foreign Language Teacher Training Capacity Development as a Way to Ukraine’s Multilingual Education and European Integration.</p>
-            <ButtonApp shadow="shadow">About MultiEd</ButtonApp>
+            <p>{t("Main-header-disc")}</p>
+            <ButtonApp shadow="shadow">{t("about-boost-button")}</ButtonApp>
          </div>
 
          <div className={s.elementor_bottom}>
