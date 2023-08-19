@@ -20,6 +20,10 @@ const BoxBook = ({settings, newBook, setNewBook, getNewBook}:IProps) => {
       setNewBook({...newBook, [e.target.name]: e.target.value})
    }
 
+   const changeBodyBook = (value:string) => {
+      setNewBook({...newBook, body: value})
+   }
+
    const changeAndUploadCover = (e:any) => {
       setLoader(true)
       uploadImg(e.target.files[0], e.target.name)
@@ -73,10 +77,9 @@ const BoxBook = ({settings, newBook, setNewBook, getNewBook}:IProps) => {
                   <i className="bi bi-image"></i>
                </InputFileApp>
                <TextareaApp 
-                  name = 'body'
-                  onChange = {changeTextBook}
+                  onChange = {changeBodyBook}
                   value={newBook.body || ''}
-                  placeholder='Опис книги' 
+                  placeholder='Опис заходу…' 
                   className={s.textarea}
                />
             </div>
