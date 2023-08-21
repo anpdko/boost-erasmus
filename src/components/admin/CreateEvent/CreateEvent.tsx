@@ -34,8 +34,8 @@ const CreateEvent = () => {
 
    return <BoxEvent 
       settings={{
-         title:"Додати заходід",
-         btn:'Додати заходід'
+         title:"Додати захід",
+         btn:'Додати захід'
       }}
       newBook={newBook} 
       setNewBook={setNewBook} 

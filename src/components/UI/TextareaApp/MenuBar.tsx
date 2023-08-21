@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {TextCenter, TextRight, TextLeft, TypeItalic, TypeBold, TypeH1, TypeH2, TypeH3, Type, Code, Justify, Image, FileEarmarkImage} from 'react-bootstrap-icons'
+import {TextCenter, TextRight, TextLeft, TypeItalic, TypeBold, TypeH1, TypeH2, TypeH3, Type, Justify, Image, FileEarmarkImage} from 'react-bootstrap-icons'
 import {uploadImg} from '../../../services/upload.service'
 import Loader from '../../UI/Loader/Loader';
 

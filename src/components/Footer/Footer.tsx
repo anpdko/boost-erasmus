@@ -1,12 +1,16 @@
 import s from './Footer.module.scss'
-import logo from '../../assets/logo.png'
+import logo1 from '../../assets/logo1.webp'
+import logo2 from '../../assets/logo2.jpg'
 
 const Footer = () => {
    return (
       <footer className={s.footer}>
          <div className='container'>
             <div className={s.footer_list}>
-               <img className={s.logo} src={logo} alt="" />
+               <div className={s.box_logo}>
+                  <img className={s.logo1} src={logo1} alt="logo1" />
+                  <img className={s.logo2} src={logo2} alt="logo2" />
+               </div>
                <div className={s.col}>
                   <h3>HEADINGS</h3>
                   <ul>

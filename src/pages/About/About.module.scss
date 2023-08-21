@@ -2,7 +2,24 @@
 .about{
 
     .content{
-        margin-top: 50px;
         text-align: justify;
+        margin: 50px 0;
+        
+        p {
+           display: block;
+           margin-block-start: 1em;
+           margin-block-end: 1em;
+           margin-inline-start: 0px;
+           margin-inline-end: 0px;
+           color: #7A7A7A;
+           font-weight: normal;
+           font-size: 0.9rem;
+           line-height: 1.7;
+       }
+  
+       img{
+        width: calc(50% - 30px);
+        margin: 15px;
+       }
     }
 }

@@ -8,7 +8,7 @@ const HeaderMain = () => {
    const {t} = useTranslation()
    return (
       <header className={s.header_main}>
-         <div className={s.box_img}>
+         <div className={[s.box_img, s["color"]].join(" ")}>
             {/* <img className={s.header_img} src={headerImgWebp} alt="headerImgWebp" /> */}
             <img className={s.header_img} src={headerImg} alt="header" />
          </div>

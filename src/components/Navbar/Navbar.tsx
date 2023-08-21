@@ -1,8 +1,9 @@
 import s from './Navbar.module.scss'
-import logoImg from "../../assets/logo.png"
 import { Link, NavLink } from 'react-router-dom'
 import {Translation } from '../../components'
 import { useTranslation } from 'react-i18next';
+import logoImg1 from "../../assets/logo1.webp"
+import logoImg2 from "../../assets/logo2.jpg"
 
 const Navbar = () => {
    const {t} = useTranslation()
@@ -15,8 +16,9 @@ const Navbar = () => {
          <div className={s.box_nav}>
             <div className="container">
                <nav className={s.nav}>
-                  <Link to="/">
-                     <img className={s.logo} src={logoImg} alt="logo" />
+                  <Link className={s.box_logo} to="/">
+                     <img className={s.logo1} src={logoImg1} alt="logo1" />
+                     <img className={s.logo2} src={logoImg2} alt="logo2" />
                   </Link>
                   <div className={s.right}>
                      <ul className={s.main_menu}>

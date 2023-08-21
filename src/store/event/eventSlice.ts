@@ -10,7 +10,7 @@ export interface IBook {
    _id: string;
    title: string;
    author: string;
-   imgTitle: string;
+   imgCover: string;
    body: string;
    publisher: boolean;
    published_date: string;
@@ -144,7 +144,7 @@ export const getBook = createAsyncThunk(
    'books/getBook',
    async (bookId: string, thunkAPI) => {
       try {
-         const res = await axios.get(`${API_URL}/api/books/${bookId}`, { headers: authHeader() });
+         const res = await axios.get(`${API_URL}/api/events/${bookId}`, { headers: authHeader() });
 
          if (res.status !== 200) {
             console.log('Server error');

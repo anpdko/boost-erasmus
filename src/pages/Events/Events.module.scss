@@ -1,4 +1,74 @@
 
 .events{
-   
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 30px;
+   margin: 50px 0;
+
+   .event{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .event_img{
+         width: 100%;
+         height: 100%;
+         position: relative;
+         img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+         }
+
+         .effect{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            inset: 0;
+            transition: 0.3s;
+            background-color: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            cursor: pointer;
+
+            i{
+               color: #fff;
+               font-size: 60px;
+            }
+         }
+      }
+
+      .event_img:hover{
+         .effect{
+            opacity: 1;
+         }
+      }
+
+      .content{
+
+         h3{
+            color: rgba(50,50,50,1);
+            font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.57em;
+            line-height: 1.3;
+            word-wrap: break-word;
+            transition: 0.3s;
+         }
+         h3:hover{
+            color:#fe6a00;
+            text-decoration: underline;
+         }
+
+         .body{
+            margin: 0;
+            line-height: 1.7;
+            font-size: 15px;
+            color: rgba(85,85,85,1);
+         }
+      }
+   }
 }

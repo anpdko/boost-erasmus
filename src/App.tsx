@@ -1,11 +1,16 @@
-import React from "react"
-import { Routes, Route, Navigate } from 'react-router-dom'
-import { Home, About, Partners, Events } from './pages'
+import React, {useEffect} from "react"
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
+import { Home, About, Partners, Events, EventPage } from './pages'
 import { AdminAuth, AdminPanel } from './pages/admin'
 import { Navbar, Footer } from './components';
 import { useSelector } from "react-redux";
 
 const AppRoutes = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <React.Fragment>
       <Routes>
@@ -13,6 +18,7 @@ const AppRoutes = () => {
         <Route path='/about' element={<About/>}/>
         <Route path='/partners' element={<Partners/>}/>
         <Route path='/events' element={<Events/>}/>
+        <Route path="/event/:id" element={<EventPage/>}/>
       </Routes>
       <Footer/>
    </React.Fragment>
@@ -39,6 +45,12 @@ const AdminRoutes = () => {
 }
 
 function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div>
       <Navbar/>
