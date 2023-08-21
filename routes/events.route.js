@@ -29,7 +29,6 @@ router.get('/', async (req, res) => {
 
 // GET api/events/:id - Get one events by id
 router.get('/:id', (req, res) => {
-  console.log("id: ", req.params.id)
   Events.findById(req.params.id)
     .then(events => {
       res.json(events)
