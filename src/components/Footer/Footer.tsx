@@ -20,19 +20,19 @@ const Footer = () => {
 
                <div className={s.col}>
                   <h3>LATEST POSTS</h3>
-                  <ul>
+                  {/* <ul>
                      <li>MultiEd Professional Development Courses</li>
                      <li>The Global Trend in Bilingual Education</li>
                      <li>Holding a number of international webinars on “Sharing EU Multilingual Education Policing Practices in Ukraine”</li>
-                  </ul>
+                  </ul> */}
                </div>
 
                <div className={s.col}>
                   <h3>MODERATORS</h3>
-                  <ul>
+                  {/* <ul>
                      <li>Dr. Tetyana Myronenko</li>
                      <li>Dr. Lesia Dobrovolska (MNU)</li>
-                  </ul>
+                  </ul> */}
                </div>
             </div>
          </div>

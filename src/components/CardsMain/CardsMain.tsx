@@ -17,7 +17,7 @@ const CardsMain = () => {
                   </svg>
                </div>
                <h3>Priority</h3>
-               <p>Curriculum of Teacher of Foreign Languages development. Education of in-service teachers. Internationalization of education through launching CLIL-based courses and developing multilingual education strategies for UA HEIs.</p>
+               <p>BOOST supports five Ukrainian first-comers in their aspiration to join the European educational space and establish contacts with EU peers. The project expects a smooth exchange of ideas as the partners are of the same level and size. The EU partners will share their experience during the project's lifetime and help UA partners develop technical, digital, learning, community, and international capacity. The project’s progressive pace in different directions allows achieving high results within a short period.</p>
             </div>
             <div className={s.card}>
                <div className={s.circle}>
@@ -34,7 +34,7 @@ const CardsMain = () => {
                   </svg>
                </div>
                <h3>Project duration</h3>
-               <p>15 November 2019 – <br /> 14 November 2023</p>
+               <p>The project has a duration of 24 months. It starts 1 March 2023 and ends 28 February 2025.</p>
             </div>
             <div className={s.card}>
                <div className={s.circle}>
@@ -46,7 +46,12 @@ const CardsMain = () => {
                   </svg>
                </div>
                <h3>Target groups</h3>
-               <p>Educators (teaching staff, trainees), students, administrative staff, technical staff, librarians, policymakers, Ministry of Education and Science of Ukraine, general public</p>
+               <p>                  <ul>
+                  <li>University teachers</li>
+                  <li>Students</li>
+                  <li>Administrative staff</li>
+                  <li>Technical staff</li>
+               </ul></p>
             </div>
          </section>
       </div>
