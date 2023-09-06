@@ -4,6 +4,12 @@
    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
    gap: 40px;
 
+
+   a{
+      align-self: center;
+      height: 100%;
+   }
+
    .partner_card{
       display: grid;
       grid-template-columns: 1fr 2fr;

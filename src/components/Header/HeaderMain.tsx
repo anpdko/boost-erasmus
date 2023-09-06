@@ -16,7 +16,7 @@ const HeaderMain = () => {
          <div className={s.box_content}>
             <h1>{t("Main-page-title")}</h1>
             <p>{t("Main-header-disc")}</p>
-            <ButtonApp shadow="shadow">{t("about-boost-button")}</ButtonApp>
+            <ButtonApp shadow="shadow" type = "link" to="/about">{t("about-boost-button")}</ButtonApp>
          </div>
 
          <div className={s.elementor_bottom}>

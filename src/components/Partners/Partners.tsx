@@ -15,7 +15,7 @@ const Partners = () => {
          </div>
          <PartnersCards/>
          <div className={s.btns}>
-            <ButtonApp>{t("about-boost-button")}</ButtonApp>
+            <ButtonApp type = "link" to="/about">{t("about-boost-button")}</ButtonApp>
          </div>
       </div>
    );
