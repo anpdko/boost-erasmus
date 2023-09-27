@@ -7,6 +7,7 @@ import { getBook } from '../../store/event/eventSlice'
 import { IBook } from '../../store/event/eventSlice';
 import { Loader } from '../../components/UI'
 import { Header } from '../../components'
+import { useTranslation } from 'react-i18next';
 
 const API_URL = import.meta.env.VITE_API_URL;
 
@@ -14,6 +15,7 @@ const EventPage = () => {
    const [book, setBook] = useState<IBook | null>(null)
    const { books, loading } = useSelector((state: any) => state.books)
    const bookId = String(useParams().id)
+   const {t} = useTranslation()
    const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
 
    const getBookObj = async () => {
@@ -46,11 +48,11 @@ const EventPage = () => {
       <div className={s.event}>
 
          <Header img={API_URL + "/static/images/" + book.imgCover}>
-            <h1>{book.title}</h1>
+            <h1>{t(book.title)}</h1>
          </Header>
 
          <div className='container'>
-            <div className={s.body} dangerouslySetInnerHTML={{ __html: book.body}} />
+            <div className={s.body} dangerouslySetInnerHTML={{ __html: t(book.body)}} />
          </div>
       </div>
 

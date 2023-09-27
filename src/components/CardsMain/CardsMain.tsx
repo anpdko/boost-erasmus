@@ -1,6 +1,8 @@
 import s from './CardsMain.module.scss'
+import { useTranslation } from 'react-i18next';
 
 const CardsMain = () => {
+   const { t } = useTranslation()
    return (
       <div className='container'>
          <section className={s.cards}>
@@ -18,8 +20,8 @@ const CardsMain = () => {
                      </g>
                   </svg>
                </div>
-               <h3>Project duration</h3>
-               <p>The project has a duration of 24 months. It starts 1 March 2023 and ends 28 February 2025.</p>
+               <h3>{t("Project duration")}</h3>
+               <p>{t("The project has a duration of 24 months. It starts 1 March 2023 and ends 28 February 2025.")}</p>
             </div>
             <div className={s.card}>
                <div className={s.circle}>
@@ -33,8 +35,8 @@ const CardsMain = () => {
                      </g>
                   </svg>
                </div>
-               <h3>Priority</h3>
-               <p>BOOST supports five Ukrainian first-comers in their aspiration to join the European educational space and establish contacts with EU peers. The project expects a smooth exchange of ideas as the partners are of the same level and size. The EU partners will share their experience during the project's lifetime and help UA partners develop technical, digital, learning, community, and international capacity. The project’s progressive pace in different directions allows achieving high results within a short period.</p>
+               <h3>{t("Priority")}</h3>
+               <p>{t("BOOST supports five Ukrainian first-comers in their aspiration to join the European educational space and establish contacts with EU peers. The project expects a smooth exchange of ideas as the partners are of the same level and size. The EU partners will share their experience during the project's lifetime and help UA partners develop technical, digital, learning, community, and international capacity. The project’s progressive pace in different directions allows achieving high results within a short period.")}</p>
             </div>
             <div className={s.card}>
                <div className={s.circle}>
@@ -45,12 +47,12 @@ const CardsMain = () => {
                      </g>
                   </svg>
                </div>
-               <h3>Target groups</h3>
+               <h3>{t("Target groups")}</h3>
                <ul>
-                  <li>University teachers</li>
-                  <li>Students</li>
-                  <li>Administrative staff</li>
-                  <li>Technical staff</li>
+                  <li>{t("University teachers")}</li>
+                  <li>{t("Students")}</li>
+                  <li>{t("Administrative staff")}</li>
+                  <li>{t("Technical staff")}</li>
                </ul>
             </div>
          </section>

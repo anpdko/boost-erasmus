@@ -9,10 +9,12 @@ import headerImg from '../../assets/header.jpg'
 import { IBook } from '../../store/event/eventSlice'
 import {subText} from '../../services/text.services'
 import {Link} from 'react-router-dom'
+import { useTranslation } from 'react-i18next';
 
 const API_URL = import.meta.env.VITE_API_URL;
 
 const Events = () => {
+   const {t} = useTranslation()
    const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
    const { books, totalPages, loading } = useSelector((state: any) => state.books)
    console.log(books)
@@ -28,7 +30,7 @@ const Events = () => {
    return (
       <React.Fragment>
           <Header img={headerImg}>
-         <h1>EVENTS</h1>
+         <h1>{t("EVENTS")}</h1>
          </Header>
          <div className='container'>
             <div className={s.events}>

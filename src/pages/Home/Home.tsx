@@ -1,16 +1,16 @@
 import s from './Home.module.scss'
 import { HeaderMain, CardsMain, SectionTitle, Partners } from '../../components';
 import backImg from '../../assets/back.png'
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
-   // const {t} = useTranslation()
+   const {t} = useTranslation()
    return (
       <div className={s.home}>
          <HeaderMain />
          <CardsMain/>
          <SectionTitle img={backImg}>
-            Estonia, Ukraine, Poland, Slovenia
+            {t("Estonia, Ukraine, Poland, Slovenia")}
          </SectionTitle>
          <div className="container">
             <Partners/>
