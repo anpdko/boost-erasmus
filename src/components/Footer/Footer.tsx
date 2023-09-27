@@ -43,7 +43,7 @@ const Footer = () => {
             <div className="container">
                <div className={s.bottom_footer_content}>
                   <div className={s.left}>
-                  {t("MultiEd – Foreign Language Teacher Training Capacity Development as a Way to Ukraine’s Multilingual Education and European Integration")}
+                  {t("BOOST supports five Ukrainian first-comers in their aspiration to join the European educational space and establish contacts with EU peers.")}
                   </div>
                   <ul className={s.social}>
                      <li><i className="bi bi-facebook"></i></li>
