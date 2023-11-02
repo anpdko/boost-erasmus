@@ -45,7 +45,7 @@ const Events = () => {
                            </div>
                         </Link>
                         <div className={s.content}>
-                           <Link to={"/event/"+book._id}><h3>{book.title}</h3></Link>
+                           <Link to={"/event/"+book._id}><h3>{subText(book.title, 70)}</h3></Link>
                            <div className={s.body} dangerouslySetInnerHTML={{ __html: subText(book.body, 150) }} />
                         </div>
                      </div>
