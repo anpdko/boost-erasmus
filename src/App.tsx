@@ -18,7 +18,7 @@ const AppRoutes = () => {
         <Route path='/about' element={<About/>}/>
         <Route path='/partners' element={<Partners/>}/>
         <Route path='/events' element={<Events/>}/>
-        <Route path="/event/:id" element={<EventPage/>}/>
+        <Route path="/event/:url" element={<EventPage/>}/>
       </Routes>
       <Footer/>
    </React.Fragment>

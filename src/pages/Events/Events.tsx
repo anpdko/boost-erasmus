@@ -38,14 +38,17 @@ const Events = () => {
                {books &&
                   books.map((book: IBook) =>
                      <div key={book._id} className={s.event}>
-                        <Link to={"/event/"+book._id} className={s.event_img}>
+                        <Link 
+                           to={"/event/"+book.url} 
+                           className={s.event_img}
+                        >
                            <img src={API_URL + "/static/images/" + book.imgCover} alt="title" />
                            <div className={s.effect}>
                               <i className="bi bi-plus-lg"></i>
                            </div>
                         </Link>
                         <div className={s.content}>
-                           <Link to={"/event/"+book._id}><h3>{subText(book.title, 70)}</h3></Link>
+                           <Link to={"/event/"+book.url}><h3>{subText(book.title, 70)}</h3></Link>
                            <div className={s.body} dangerouslySetInnerHTML={{ __html: subText(book.body, 150) }} />
                         </div>
                      </div>

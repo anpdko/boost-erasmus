@@ -15,6 +15,7 @@ export interface IBook {
    publisher: boolean;
    published_date: string;
    updated_date: string;
+   url:string;
 }
 
 interface IPropsGetBooks {
@@ -140,11 +141,34 @@ export const deleteBook = createAsyncThunk(
       }
    }
 );
+
 export const getBook = createAsyncThunk(
    'books/getBook',
    async (bookId: string, thunkAPI) => {
       try {
          const res = await axios.get(`${API_URL}/api/events/${bookId}`, { headers: authHeader() });
+
+         if (res.status !== 200) {
+            console.log('Server error');
+            throw new Error('Server error');
+         }
+
+         thunkAPI.dispatch(setBooks({ books: [res.data] }));
+      } catch (error) {
+         if (axios.isAxiosError(error) && error.response?.status === 401) {
+            alert(error.response.data.message);
+            thunkAPI.dispatch(adminLogout());
+         }
+         return thunkAPI.rejectWithValue((error as Error).message);
+      }
+   }
+);
+
+export const getBookUrl = createAsyncThunk(
+   'books/getBookUrl',
+   async (bookUrl: string, thunkAPI) => {
+      try {
+         const res = await axios.get(`${API_URL}/api/events/url/${bookUrl}`, { headers: authHeader() });
 
          if (res.status !== 200) {
             console.log('Server error');
