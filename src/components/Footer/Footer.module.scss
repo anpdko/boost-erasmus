@@ -2,8 +2,26 @@
    .footer_list {
       margin: 100px 0 50px 0;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: 2fr 1fr 2fr 1fr;
       gap: 30px;
+
+      @media (max-width: 620px) {
+         grid-template-columns: 2fr 1fr;
+         margin: 50px 0 50px 0;
+      }
+
+      @media (max-width: 430px) {
+         grid-template-columns: 1fr 1fr;
+
+         .latest_posts{
+            grid-column: 1 / 3;
+            order: 2;
+         }
+      }
+
+      a{
+         color: #535353;
+      }
 
       .box_logo{
          .logo1 {
@@ -13,6 +31,10 @@
          .logo2 {
             width: 100%;
             max-width: 300px;
+         }
+
+         @media (max-width: 430px) {
+            grid-column: 1 / 3;
          }
       }
 
@@ -72,7 +94,6 @@
             }
          }
       }
-
 
    }
 }

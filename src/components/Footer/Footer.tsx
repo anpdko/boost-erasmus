@@ -17,25 +17,27 @@ const Footer = () => {
                <div className={s.col}>
                   <h3>{t("HEADINGS")}</h3>
                   <ul>
+                     <li><Link to="/">{t('Home')}</Link></li>
+                     <li><Link to="/about">{t('About BOOST')}</Link></li>
+                     <li><Link to="/partners">{t('Partners')}</Link></li>
                      <li><Link to="/events">{t("Events")}</Link></li>
                   </ul>
                </div>
 
-               <div className={s.col}>
+               <div className={[s.col, s.latest_posts].join(' ')}>
                   <h3>{t("LATEST POSTS")}</h3>
-                  {/* <ul>
-                     <li>MultiEd Professional Development Courses</li>
-                     <li>The Global Trend in Bilingual Education</li>
-                     <li>Holding a number of international webinars on “Sharing EU Multilingual Education Policing Practices in Ukraine”</li>
-                  </ul> */}
+                  <ul>
+                     <li><Link to="/event/bilat-briefing-pol-ped">Відбувся білатеральний брифінг представників Полтавського педагогічного з проєктним офіцером Європейської комісії за міжнародним проєктом Erasmus+ КА2</Link></li>
+                     <li><Link to="/event/2023-may-kickoff-meeting">Kick-off meeting 15-18 May, 2023</Link></li>
+                  </ul>
                </div>
 
                <div className={s.col}>
                   <h3>{t("MODERATORS")}</h3>
-                  {/* <ul>
-                     <li>Dr. Tetyana Myronenko</li>
-                     <li>Dr. Lesia Dobrovolska (MNU)</li>
-                  </ul> */}
+                  <ul>
+                     <li>Oleksandr Pavlenko</li>
+                     <li>Andrii Priadko</li>
+                  </ul>
                </div>
             </div>
          </div>

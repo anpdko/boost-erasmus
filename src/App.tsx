@@ -26,7 +26,14 @@ const AppRoutes = () => {
 }
 
 const AdminRoutes = () => {
+  // const dispatch = useDispatch();
   const isLoggedIn = useSelector((state:any)=> state.admin.isLoggedIn)
+
+  // useEffect(() => {
+  //   if (isLoggedIn) {
+  //     dispatch(isRegistered());
+  //   }
+  // }, [dispatch, isLoggedIn]);
 
   return (
     <React.Fragment>
