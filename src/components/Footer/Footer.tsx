@@ -48,7 +48,11 @@ const Footer = () => {
                   {t("Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Education and Culture Agency (EACEA). Neither the European Union nor the granting authority can be held responsible for them")}
                   </div>
                   <ul className={s.social}>
-                     <li><i className="bi bi-facebook"></i></li>
+                     <li> 
+                        <a target="_blank" href='https://www.facebook.com/boostUkraine/'>
+                           <i className="bi bi-facebook"></i>
+                        </a>
+                     </li>
                   </ul>
                </div>
             </div>
