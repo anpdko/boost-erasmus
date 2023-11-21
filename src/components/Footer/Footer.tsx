@@ -45,7 +45,7 @@ const Footer = () => {
             <div className="container">
                <div className={s.bottom_footer_content}>
                   <div className={s.left}>
-                  {t("BOOST supports in their aspiration to join the European educational space.")}
+                  {t("Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Education and Culture Agency (EACEA). Neither the European Union nor the granting authority can be held responsible for them")}
                   </div>
                   <ul className={s.social}>
                      <li><i className="bi bi-facebook"></i></li>
