@@ -37,7 +37,7 @@ const partners = [
          title: "University of Applied Sciences in Elblag (Poland)",
       },
       ua: {
-         title: "Державний Університет в Ельблонзі (Польща)",
+         title: "Державний університет в Ельблонзі (Польща)",
       },
       link: "https://ans-elblag.pl/",
       img: ansImg

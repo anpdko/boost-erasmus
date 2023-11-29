@@ -11,8 +11,8 @@ const Footer = () => {
          <div className='container'>
             <div className={s.footer_list}>
                <div className={s.box_logo}>
+               <img className={s.logo2} src={logo2} alt="logo2" />
                   <img className={s.logo1} src={logo1} alt="logo1" />
-                  <img className={s.logo2} src={logo2} alt="logo2" />
                </div>
                <div className={s.col}>
                   <h3>{t("HEADINGS")}</h3>

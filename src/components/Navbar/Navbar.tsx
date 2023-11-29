@@ -56,8 +56,8 @@ const Navbar = () => {
             <div className="container">
                <nav className={s.nav}>
                   <Link className={s.box_logo} to="/">
-                     <img className={s.logo1} src={logoImg1} alt="logo1" />
                      <img className={s.logo2} src={logoImg2} alt="logo2" />
+                     <img className={s.logo1} src={logoImg1} alt="logo1" />
                   </Link>
                   <div 
                      className={[s.toggle, s[toggleActive()]].join(' ')} 

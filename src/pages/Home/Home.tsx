@@ -10,7 +10,7 @@ const Home = () => {
          <HeaderMain />
          <CardsMain/>
          <SectionTitle img={backImg}>
-            {t("Estonia, Ukraine, Poland, Slovenia")}
+            {t("The target country is Ukraine, and the project partner countries are Estonia, Poland, Slovenia")}
          </SectionTitle>
          <div className="container">
             <Partners/>
