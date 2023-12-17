@@ -23,7 +23,10 @@ const CreateEvent = () => {
       console.log(newBook)
       if(!!newBook?.imgCover) {
          console.log(newBook)
-         dispatch(createBook({body: newBook}))
+         dispatch(createBook({body: {
+            ...newBook, 
+            url: String(Date.now())
+         }}))
          dispatch(getBooks({page:1}))
          navigate('admin/panel')
       }
