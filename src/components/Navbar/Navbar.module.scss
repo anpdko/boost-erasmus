@@ -23,13 +23,16 @@
       align-items: center;
       justify-content: space-between;
       padding: 20px 0;
+
       @media (max-width: 940px) {
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr auto;
       }
 
       .box_logo {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
 
         .logo1 {
           height: 60px;
@@ -49,11 +52,24 @@
             height: 30px;
           }
         }
+        .logo3 {
+          height: 50px;
+          padding-left: 20px;
+          
+          @media (max-width: 800px) {
+            height: 40px;
+          }
+          @media (max-width: 400px) {
+            height: 30px;
+          }
+        }
+
       }
 
       .right {
         @media (max-width: 940px) {
           width: 100%;
+          grid-column: 1 / 4;
           max-height: 0vh;
           transition: 0.5s;
           overflow: hidden;

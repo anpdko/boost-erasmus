@@ -2,7 +2,7 @@
    .footer_list {
       margin: 100px 0 50px 0;
       display: grid;
-      grid-template-columns: 2fr 1fr 2fr 1fr;
+      grid-template-columns: 2fr 1fr 2fr 1fr 1fr;
       gap: 30px;
 
       @media (max-width: 620px) {
@@ -29,6 +29,10 @@
             max-width: 200px;
          }
          .logo2 {
+            width: 100%;
+            max-width: 300px;
+         }
+         .logo3 {
             width: 100%;
             max-width: 300px;
          }

@@ -1,6 +1,6 @@
 import React, {useEffect} from "react"
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
-import { Home, About, Partners, Events, EventPage } from './pages'
+import { Home, About, Partners, Events, EventPage, Contacts } from './pages'
 import { AdminAuth, AdminPanel } from './pages/admin'
 import { Navbar, Footer } from './components';
 import { useSelector } from "react-redux";
@@ -18,6 +18,7 @@ const AppRoutes = () => {
         <Route path='/about' element={<About/>}/>
         <Route path='/partners' element={<Partners/>}/>
         <Route path='/events' element={<Events/>}/>
+        <Route path='/contacts' element={<Contacts/>}/>
         <Route path="/event/:url" element={<EventPage/>}/>
       </Routes>
       <Footer/>

@@ -1,6 +1,7 @@
 import s from './Footer.module.scss'
 import logo1 from '../../assets/logo1.webp'
 import logo2 from '../../assets/logo2.jpg'
+import logoImg3 from "../../assets/mon_logo_on_white_eng-1.png"
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
@@ -11,8 +12,9 @@ const Footer = () => {
          <div className='container'>
             <div className={s.footer_list}>
                <div className={s.box_logo}>
-               <img className={s.logo2} src={logo2} alt="logo2" />
+                  <img className={s.logo2} src={logo2} alt="logo2" />
                   <img className={s.logo1} src={logo1} alt="logo1" />
+                  <img className={s.logo3} src={logoImg3} alt='logo3'/>
                </div>
                <div className={s.col}>
                   <h3>{t("HEADINGS")}</h3>
@@ -36,7 +38,24 @@ const Footer = () => {
                   <h3>{t("MODERATORS")}</h3>
                   <ul>
                      <li>Oleksandr Pavlenko</li>
+                     <li>Alina Maslova</li>
                      <li>Andrii Priadko</li>
+                  </ul>
+
+                  {/* <h3>COORDINATOR</h3>
+                  <ul>
+                     <li>BOOST project international coordinator
+                        Oleksandra Golovko 
+                        Tartu University Narva College, Estonia
+                        oleksandra.golovko@ut.ee</li>
+                  </ul> */}
+               </div>
+               <div className={s.col}>
+                  <h3>BOOST COORDINATOR</h3>
+                  <ul>
+                     <li>Oleksandra Golovko 
+                        Tartu University Narva College, Estonia 
+                        <a href="emeil:oleksandra.golovko@ut.ee"> oleksandra.golovko@ut.ee</a></li>
                   </ul>
                </div>
             </div>

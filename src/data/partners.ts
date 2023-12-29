@@ -7,6 +7,8 @@ import msuImg from '../assets/partners/msu.jpg'
 import pnpuImg from '../assets/partners/pnpu.png'
 import uprImg from '../assets/partners/upr.png'
 import utImg from '../assets/partners/ut.png'
+import logoImg3 from "../assets/mon_logo_on_white_eng-1.png"
+
 
 const partners = [
    {
@@ -107,7 +109,18 @@ const partners = [
       },
       link: "https://msu.edu.ua/",
       img: msuImg
-   }
+   },
+   {
+      id: 10,
+      en: {
+         title: "Ministry of Education and Science of Ukraine",
+      },
+      ua: {
+         title: "Міністерство освіти і науки України",
+      },
+      link: "https://mon.gov.ua/ua",
+      img: logoImg3
+   },
 ]
 
 export default partners

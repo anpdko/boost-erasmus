@@ -5,6 +5,7 @@ import {Translation } from '../../components'
 import { useTranslation } from 'react-i18next';
 import logoImg1 from "../../assets/logo1.webp"
 import logoImg2 from "../../assets/logo2.jpg"
+import logoImg3 from "../../assets/mon_logo_on_white_eng-1.png"
 
 const data =  [
    {
@@ -26,7 +27,17 @@ const data =  [
       id: "4",
       link: "/events",
       title: "main_menu_events"
-   }
+   },
+   // {
+   //    id: "6",
+   //    link: "/events",
+   //    title: "Project Outcomes"
+   // }, 
+   // {
+   //    id: "5",
+   //    link: "/contacts",
+   //    title: "Contacts"
+   // },
 ]
 
 const Navbar = () => {
@@ -58,6 +69,7 @@ const Navbar = () => {
                   <Link className={s.box_logo} to="/">
                      <img className={s.logo2} src={logoImg2} alt="logo2" />
                      <img className={s.logo1} src={logoImg1} alt="logo1" />
+                     <img className={s.logo3} src={logoImg3} alt='logo3' />
                   </Link>
                   <div 
                      className={[s.toggle, s[toggleActive()]].join(' ')} 

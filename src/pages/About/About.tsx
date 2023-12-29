@@ -13,15 +13,12 @@ const About = () => {
          <Header img={headerImg}>
             <h1>{t("about-boost-h1")}</h1>
          </Header>
-
          <div className='container'>
             <div className={s.content}>
                <div dangerouslySetInnerHTML={{ __html: t("About-text-HTML") }} />
             </div>
             
          </div>
-
-
       </div>
    );
 };

@@ -41,7 +41,7 @@ const CardsMain = () => {
                </div>
                <h3>{t("Priority")}</h3>
                <ul>
-                  <li>{t("BOOST supports six Ukrainian first-comers in their aspiration to join the European educational space and establish contacts with EU peers.")}</li>
+                  <li>{t("BOOST supports six first-comers in their aspiration to join the European educational space and establish contacts with EU peers.")}</li>
                   <li>{t("The project expects a smooth exchange of ideas as the partners are of the same level and size.")}</li>
                   <li>{t("The EU partners will share their experience during the project's lifetime and help UA partners develop technical, digital, learning, community, and international capacity.")}</li>
                   <li>{t("The project’s progressive pace in different directions allows achieving high results within a short period.")}</li>
