@@ -20,6 +20,10 @@
          border-left: 1px solid #c5c5c5;
          padding: 0 0 0 1.2rem;
 
+         @media (max-width: 520px) {
+            padding: 0 0 0 0.8rem;
+         }
+
          h3 {
             transition: 0.3s;
          }
