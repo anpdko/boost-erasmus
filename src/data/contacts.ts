@@ -118,9 +118,9 @@ export default [
    },
    {
       ua: {
-         job: "", 
-         name: "",
-         university: ""
+         job: "Координатор проєкту BOOST", 
+         name: "Svitlana Nesterova",
+         university: "Мукачівський державний університет (Україна)"
       },
       en: {
          job: "BOOST project coordinator", 

@@ -33,11 +33,11 @@ const data =  [
    //    link: "/events",
    //    title: "Project Outcomes"
    // }, 
-   // {
-   //    id: "5",
-   //    link: "/contacts",
-   //    title: "Contacts"
-   // },
+   {
+      id: "5",
+      link: "/contacts",
+      title: "Contacts"
+   },
 ]
 
 const Navbar = () => {
