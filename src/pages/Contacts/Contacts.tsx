@@ -25,7 +25,7 @@ const Contacts = () => {
                         </h3>
                         <p className={s.univ}>{contact[getLang()].university}</p>
                         {contact.email.map(email => 
-                           <p><a className={s.email} href={'mailto:' + email}>{email}</a></p>   
+                           <p key={email}><a className={s.email} href={'mailto:' + email}>{email}</a></p>   
                         )}
                      </div>
                   </div>
